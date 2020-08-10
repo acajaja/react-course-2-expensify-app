@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test render expense list item with data 1`] = `
+<div>
+  <section>
+    <h3>
+      <Link
+        replace={false}
+        to="/edit/1"
+      >
+        Ha fun ha!
+      </Link>
+    </h3>
+    <p>
+      $
+      4332
+       - created at: 
+      0
+    </p>
+  </section>
+</div>
+`;

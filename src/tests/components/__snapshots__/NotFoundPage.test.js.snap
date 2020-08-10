@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the 404 page 1`] = `
+<div>
+  <p>
+    Ooops! 404 :(
+    <br />
+    <Link
+      replace={false}
+      title="Home"
+      to="/"
+    >
+      Home
+    </Link>
+  </p>
+</div>
+`;

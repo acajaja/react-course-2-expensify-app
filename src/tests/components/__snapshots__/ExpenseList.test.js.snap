@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test render expense list with expenses 1`] = `
+<div>
+  <section>
+    <h1>
+      Expense List
+    </h1>
+    <ExpenseListItem
+      amount={4332}
+      createdAt={0}
+      description="Ha fun ha!"
+      id="1"
+      key="1"
+      note="Some random lorem ipsum"
+    />
+    <ExpenseListItem
+      amount={343656}
+      createdAt={-345600000}
+      description="Rent"
+      id="2"
+      key="2"
+      note="arges rger"
+    />
+    <ExpenseListItem
+      amount={232}
+      createdAt={345600000}
+      description="Credit Card"
+      id="3"
+      key="3"
+      note="EF ef 4wg m"
+    />
+  </section>
+</div>
+`;
+
+exports[`Test render expense list with no expenses 1`] = `
+<div>
+  <section>
+    <h1>
+      Expense List
+    </h1>
+    <p>
+      No expenses
+    </p>
+  </section>
+</div>
+`;
