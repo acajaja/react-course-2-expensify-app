@@ -5,6 +5,11 @@
   "author": "Clif",
   "license": "MIT",
   "private": false,
+  "engines": {
+    "node": "8.x",
+    "npm": "6.x",
+    "yarn": "1.x"
+  },
   "scripts": {
     "serve": "live-server public/",
     "build:dev": "webpack",
