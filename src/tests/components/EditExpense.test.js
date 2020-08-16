@@ -24,7 +24,7 @@ test('Test render EditExpense', () => {
 });
 
 test('Test onSubmit', () => {
-    const updates = { description: 'Sex toys' };
+    const updates = { description: 'Baby Formula' };
     wrapper.find('ExpenseForm').prop('onSubmit')(updates);
 
     expect(history.push).toHaveBeenLastCalledWith('/');
