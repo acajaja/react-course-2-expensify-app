@@ -12,10 +12,9 @@ exports[`Test render expense list item with data 1`] = `
       </Link>
     </h3>
     <p>
-      $
-      4332
+      $43.32
        - created at: 
-      0
+      December 31st, 1969
     </p>
   </section>
 </div>

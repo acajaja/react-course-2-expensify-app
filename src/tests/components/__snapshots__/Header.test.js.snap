@@ -26,14 +26,6 @@ exports[`Test rendering header 1`] = `
     <NavLink
       activeClassName="is-active"
       ariaCurrent="true"
-      title="Edit"
-      to="/edit"
-    >
-      Edit
-    </NavLink>
-    <NavLink
-      activeClassName="is-active"
-      ariaCurrent="true"
       title="Help"
       to="/help"
     >
