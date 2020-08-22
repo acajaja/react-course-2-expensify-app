@@ -12,7 +12,7 @@ export default (state = expensesReducerDefaultState, action) => {
         case 'EDIT_EXPENSE':
             return state.map((expense) => {
                 if (expense.id === action.id) {
-                    // updates expense by combine the two objects, overwriting
+                    // updates expense by combining the two objects, overwriting
                     // with action.updates
                     return {
                         ...expense,
@@ -22,6 +22,8 @@ export default (state = expensesReducerDefaultState, action) => {
                     return expense;
                 }
             });
+        case 'SET_EXPENSES':
+            return action.expenses;
         default:
             return state;
     }

@@ -28,7 +28,7 @@ test('Test remove expense when ID not found', () => {
     expect(state).toEqual(expenses);
 });
 
-test('Test add expense', () => {
+test('Test add expense to fixture data', () => {
     const newExpense = {
         id: '829',
         description: 'New test expense!',
@@ -68,4 +68,30 @@ test('Test edit expense when ID not found', () => {
     };
     const state = expensesReducer(expenses, action);
     expect(state).toEqual(expenses);
+});
+
+test('Test set expenses, should overwrite fixture data', () => {
+    const newExpenses = [
+        {
+            id: '575',
+            description: 'Skateboard trucks',
+            amount: 4500,
+            createdAt: moment().subtract(5, 'months'),
+            note: 'Some cool Independant 160 trucks'
+        },
+        {
+            id: '65',
+            description: 'Skateboard bearings & spacers',
+            amount: 4800,
+            createdAt: moment().subtract(1, 'day'),
+            note: 'Speedy!'
+        }
+    ];
+    const action = {
+        type: 'SET_EXPENSES',
+        expenses: newExpenses
+    };
+
+    const state = expensesReducer(expenses, action);
+    expect(state).toEqual(newExpenses);
 });
