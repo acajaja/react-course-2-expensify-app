@@ -2,7 +2,7 @@ import {
     startAddExpense, addExpense,
     editExpense, removeExpense,
     setExpenses, startSetExpenses,
-    startRemoveExpense
+    startRemoveExpense, startEditExpense
 } from '../../actions/expenses';
 import expenses from '../fixtures/expenses';
 import configureMockStore from 'redux-mock-store';
@@ -57,6 +57,25 @@ test('Test editExpense action', () => {
     const actionObject = editExpense('id123', newData);
 
     expect(actionObject).toEqual({ id: 'id123', type: 'EDIT_EXPENSE', updates: newData});
+});
+
+test('Test startEditExpense action', (done) => {
+    const mockStore = createMockStore({});
+    const idToUpdate = expenses[0].id;
+    const updates = { description: 'Testing the update', amount: 9136 };
+
+    mockStore.dispatch(startEditExpense(idToUpdate, updates))
+        .then(() => {
+            const actions = mockStore.getActions();
+
+            expect(actions[0]).toEqual({
+                type: 'EDIT_EXPENSE',
+                id: idToUpdate,
+                updates
+            });
+
+            done();
+        });
 });
 
 test('Test addExpense with user data', () => {
