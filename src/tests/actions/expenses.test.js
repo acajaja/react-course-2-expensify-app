@@ -42,6 +42,12 @@ test('Test startRemoveExpense', (done) => {
                 type: 'REMOVE_EXPENSE',
                 id: idToRemove.id
             });
+
+            return database.ref(`expenses/${idToRemove.id}`)
+                .once('value');
+        })
+        .then((snapshot) => {
+            expect(snapshot.val()).toBe(null);
             done();
         });
 });
