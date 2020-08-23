@@ -74,6 +74,17 @@ test('Test startEditExpense action', (done) => {
                 updates
             });
 
+            return database.ref(`expenses/${idToUpdate}`)
+                .once('value');
+        })
+        .then((snapshot) => {
+            const expected = {
+                note: expenses[0].note,
+                createdAt: expenses[0].createdAt,
+                ...updates
+            };
+
+            expect(snapshot.val()).toEqual(expected);
             done();
         });
 });
