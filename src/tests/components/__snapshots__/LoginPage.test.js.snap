@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test login button click 1`] = `
+<div>
+  <form>
+    <button
+      onClick={[Function]}
+      title="Login"
+    >
+      Login
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Test render default login page 1`] = `
+<div>
+  <form>
+    <button
+      onClick={[Function]}
+      title="Login"
+    >
+      Login
+    </button>
+  </form>
+</div>
+`;
