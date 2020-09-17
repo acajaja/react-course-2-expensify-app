@@ -10,6 +10,4 @@ app.get('*', (request, response) => {
     response.sendFile(path.join(publicPath, 'index.html'));
 });
 
-app.listen(port, () => {
-    console.info('mpc9j 398fj0f7h');
-});
+app.listen(port, () => {});

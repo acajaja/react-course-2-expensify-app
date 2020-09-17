@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test rendering header 1`] = `
+exports[`Test logout button click 1`] = `
 <header>
   <h1>
     Expensify
@@ -10,10 +10,10 @@ exports[`Test rendering header 1`] = `
       activeClassName="is-active"
       ariaCurrent="true"
       exact={true}
-      title="Home"
-      to="/"
+      title="Dashboard"
+      to="/dashboard"
     >
-      Home
+      Dashboard
     </NavLink>
     <NavLink
       activeClassName="is-active"
@@ -31,6 +31,53 @@ exports[`Test rendering header 1`] = `
     >
       Help
     </NavLink>
+    <button
+      onClick={[Function]}
+      title="Logout"
+    >
+      Logout
+    </button>
+  </nav>
+</header>
+`;
+
+exports[`Test rendering header 1`] = `
+<header>
+  <h1>
+    Expensify
+  </h1>
+  <nav>
+    <NavLink
+      activeClassName="is-active"
+      ariaCurrent="true"
+      exact={true}
+      title="Dashboard"
+      to="/dashboard"
+    >
+      Dashboard
+    </NavLink>
+    <NavLink
+      activeClassName="is-active"
+      ariaCurrent="true"
+      title="Create"
+      to="/create"
+    >
+      Create
+    </NavLink>
+    <NavLink
+      activeClassName="is-active"
+      ariaCurrent="true"
+      title="Help"
+      to="/help"
+    >
+      Help
+    </NavLink>
+    <button
+      onClick={[Function]}
+      title="Logout"
+    >
+      Logout
+    </button>
   </nav>
 </header>
 `;
