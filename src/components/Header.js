@@ -8,9 +8,8 @@ export const Header = ({ startLogout }) => (
     <header>
         <h1>Expensify</h1>
         <nav>
-            <NavLink to="/dashboard" activeClassName="is-active" title="Dashboard" exact={true}>Dashboard</NavLink>
+            <NavLink to="/dashboard" activeClassName="is-active" title="Dashboard">Dashboard</NavLink>
             <NavLink to="/create" activeClassName="is-active" title="Create">Create</NavLink>
-            <NavLink to="/help" activeClassName="is-active" title="Help">Help</NavLink>
             <button onClick={(e) => {
                 e.preventDefault();
                 startLogout();

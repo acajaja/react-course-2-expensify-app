@@ -9,7 +9,6 @@ exports[`Test logout button click 1`] = `
     <NavLink
       activeClassName="is-active"
       ariaCurrent="true"
-      exact={true}
       title="Dashboard"
       to="/dashboard"
     >
@@ -22,14 +21,6 @@ exports[`Test logout button click 1`] = `
       to="/create"
     >
       Create
-    </NavLink>
-    <NavLink
-      activeClassName="is-active"
-      ariaCurrent="true"
-      title="Help"
-      to="/help"
-    >
-      Help
     </NavLink>
     <button
       onClick={[Function]}
@@ -50,7 +41,6 @@ exports[`Test rendering header 1`] = `
     <NavLink
       activeClassName="is-active"
       ariaCurrent="true"
-      exact={true}
       title="Dashboard"
       to="/dashboard"
     >
@@ -63,14 +53,6 @@ exports[`Test rendering header 1`] = `
       to="/create"
     >
       Create
-    </NavLink>
-    <NavLink
-      activeClassName="is-active"
-      ariaCurrent="true"
-      title="Help"
-      to="/help"
-    >
-      Help
     </NavLink>
     <button
       onClick={[Function]}
