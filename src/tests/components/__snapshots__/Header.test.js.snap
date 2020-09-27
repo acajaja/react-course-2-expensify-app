@@ -1,65 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test logout button click 1`] = `
-<header>
-  <h1>
-    Expensify
-  </h1>
+<header
+  className="header"
+>
   <nav>
-    <NavLink
-      activeClassName="is-active"
-      ariaCurrent="true"
-      title="Dashboard"
-      to="/dashboard"
+    <div
+      className="content-container"
     >
-      Dashboard
-    </NavLink>
-    <NavLink
-      activeClassName="is-active"
-      ariaCurrent="true"
-      title="Create"
-      to="/create"
-    >
-      Create
-    </NavLink>
-    <button
-      onClick={[Function]}
-      title="Logout"
-    >
-      Logout
-    </button>
+      <div
+        className="header__content"
+      >
+        <Link
+          className="header__title"
+          replace={false}
+          title="Dashboard"
+          to="/dashboard"
+        >
+          <h1>
+            Expensify
+          </h1>
+        </Link>
+        <button
+          className="button button--login"
+          onClick={[Function]}
+          title="Logout"
+        >
+          Logout
+        </button>
+      </div>
+    </div>
   </nav>
 </header>
 `;
 
 exports[`Test rendering header 1`] = `
-<header>
-  <h1>
-    Expensify
-  </h1>
+<header
+  className="header"
+>
   <nav>
-    <NavLink
-      activeClassName="is-active"
-      ariaCurrent="true"
-      title="Dashboard"
-      to="/dashboard"
+    <div
+      className="content-container"
     >
-      Dashboard
-    </NavLink>
-    <NavLink
-      activeClassName="is-active"
-      ariaCurrent="true"
-      title="Create"
-      to="/create"
-    >
-      Create
-    </NavLink>
-    <button
-      onClick={[Function]}
-      title="Logout"
-    >
-      Logout
-    </button>
+      <div
+        className="header__content"
+      >
+        <Link
+          className="header__title"
+          replace={false}
+          title="Dashboard"
+          to="/dashboard"
+        >
+          <h1>
+            Expensify
+          </h1>
+        </Link>
+        <button
+          className="button button--login"
+          onClick={[Function]}
+          title="Logout"
+        >
+          Logout
+        </button>
+      </div>
+    </div>
   </nav>
 </header>
 `;

@@ -1,25 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test a single expense 1`] = `
-<div>
-  <p>
-    There are 
-    1
-     expenses totaling 
-    $1.23
-    .
-  </p>
-</div>
+<section
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       expenses totaling 
+      <span>
+        $1.23
+      </span>
+      .
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</section>
 `;
 
 exports[`Test multiple expenses 1`] = `
-<div>
-  <p>
-    There are 
-    16
-     expenses totaling 
-    $13,452.23
-    .
-  </p>
-</div>
+<section
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        16
+      </span>
+       expenses totaling 
+      <span>
+        $13,452.23
+      </span>
+      .
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="button"
+        replace={false}
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
+</section>
 `;

@@ -2,23 +2,45 @@
 
 exports[`Test render EditExpense 1`] = `
 <div>
-  <ExpenseForm
-    expense={
-      Object {
-        "amount": 343656,
-        "createdAt": -345600000,
-        "description": "Rent",
-        "id": "2",
-        "note": "arges rger",
-      }
-    }
-    onSubmit={[Function]}
-  />
-  <button
-    onClick={[Function]}
-    title="Remove this expense"
-  >
-    x
-  </button>
+  <section>
+    <div
+      className="page-header"
+    >
+      <div
+        className="content-container"
+      >
+        <h1
+          className="page-header__title"
+        >
+          Edit Expense
+        </h1>
+      </div>
+    </div>
+    <div
+      className="content-container"
+    >
+      <ExpenseForm
+        expense={
+          Object {
+            "amount": 343656,
+            "createdAt": -345600000,
+            "description": "Rent",
+            "id": "2",
+            "note": "arges rger",
+          }
+        }
+        onSubmit={[Function]}
+      />
+      <div>
+        <button
+          className="button button--remove"
+          onClick={[Function]}
+          title="Remove this expense"
+        >
+          Remove Expense
+        </button>
+      </div>
+    </div>
+  </section>
 </div>
 `;

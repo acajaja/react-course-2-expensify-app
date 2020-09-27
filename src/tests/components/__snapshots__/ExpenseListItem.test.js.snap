@@ -1,21 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test render expense list item with data 1`] = `
-<div>
-  <section>
-    <h3>
-      <Link
-        replace={false}
-        to="/edit/1"
-      >
-        Ha fun ha!
-      </Link>
-    </h3>
-    <p>
-      $43.32
-      - created at: 
-      December 31st, 1969
+<Link
+  className="list-item"
+  replace={false}
+  to="/edit/1"
+>
+  <div>
+    <p
+      className="list-item__title"
+    >
+      Ha fun ha!
     </p>
-  </section>
-</div>
+    <span
+      className="list-item__sub-title"
+    >
+      created: 
+      December 31st, 1969
+    </span>
+  </div>
+  <p
+    className="list-item__data"
+  >
+    $43.32
+  </p>
+</Link>
 `;

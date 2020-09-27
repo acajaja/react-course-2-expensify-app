@@ -1,0 +1,38 @@
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $m-size;
+
+    /* Large screens */
+    @media (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+        margin-bottom: $l-size;
+    }
+}
+.input-group__item {
+    margin-bottom: $s-size;
+
+    /* Large screens */
+    @media (min-width: $desktop-breakpoint) {
+        margin: 0 $s-size 0 0;
+    }
+}
+/*
+.input-group__item:nth-child(1) {
+    padding: $m-size;
+    input {
+        border: none;
+        color: #3f3f3f;
+        font-size: $m-size;
+    }
+}
+.input-group__item:nth-child(2) {
+    padding: $m-size;
+    select {
+        background: none;
+        border: none;
+        color: #3f3f3f;
+        font-size: $m-size;
+    }
+}
+*/

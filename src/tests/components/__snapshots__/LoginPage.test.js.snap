@@ -1,27 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test login button click 1`] = `
-<div>
-  <form>
+<div
+  className="box-layout"
+>
+  <div
+    className="box-layout__box"
+  >
+    <h1
+      className="box-layout__title"
+    >
+      Expensify
+    </h1>
+    <p>
+      Yo! Get your expenses together!
+    </p>
     <button
+      className="button"
       onClick={[Function]}
       title="Login"
     >
-      Login
+      Login with Google
     </button>
-  </form>
+  </div>
 </div>
 `;
 
 exports[`Test render default login page 1`] = `
-<div>
-  <form>
+<div
+  className="box-layout"
+>
+  <div
+    className="box-layout__box"
+  >
+    <h1
+      className="box-layout__title"
+    >
+      Expensify
+    </h1>
+    <p>
+      Yo! Get your expenses together!
+    </p>
     <button
+      className="button"
       onClick={[Function]}
       title="Login"
     >
-      Login
+      Login with Google
     </button>
-  </form>
+  </div>
 </div>
 `;
