@@ -6,33 +6,16 @@
     /* Large screens */
     @media (min-width: $desktop-breakpoint) {
         flex-direction: row;
+        justify-content: space-between;
         margin-bottom: $l-size;
     }
 }
 .input-group__item {
     margin-bottom: $s-size;
-
-    /* Large screens */
-    @media (min-width: $desktop-breakpoint) {
-        margin: 0 $s-size 0 0;
+}
+/* Large screens */
+@media (min-width: $desktop-breakpoint) {
+    .input-group__item:nth-child(2) {
+        margin: 0 $s-size $s-size;
     }
 }
-/*
-.input-group__item:nth-child(1) {
-    padding: $m-size;
-    input {
-        border: none;
-        color: #3f3f3f;
-        font-size: $m-size;
-    }
-}
-.input-group__item:nth-child(2) {
-    padding: $m-size;
-    select {
-        background: none;
-        border: none;
-        color: #3f3f3f;
-        font-size: $m-size;
-    }
-}
-*/
